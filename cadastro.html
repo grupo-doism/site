@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cadastro · Fluxxu</title>
+<meta name="description" content="Comece a usar o Fluxxu: 30 dias grátis, sem cartão de crédito.">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#111514">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0B7A45}a:hover{color:#075432}
+</style>
+<style>
+.cad{max-width:1160px;margin:0 auto;padding:64px 24px 0;display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start}
+.cad-l{flex:1 1 320px;display:flex;flex-direction:column;gap:16px}
+.cad-f{flex:1.3 1 460px;box-sizing:border-box;min-width:0;max-width:100%;border:1px solid #E3E8E5;border-radius:24px;padding:clamp(18px,5vw,32px);display:flex;flex-direction:column;gap:14px;background:#fff}
+.fld{display:flex;flex-direction:column;gap:6px}.fld label{font-weight:700;font-size:14px}
+.fld input,.fld select{font:inherit;font-size:16px;padding:12px 14px;border:1px solid #CDD6D1;border-radius:12px;background:#fff;color:#111514}
+.fld input:focus,.fld select:focus{outline:3px solid #BFF0D6;border-color:#00BF63}
+.row2{display:flex;flex-wrap:wrap;gap:14px}.row2 .fld{flex:1 1 200px}
+.planos{display:flex;gap:10px;flex-wrap:wrap}.planos label{flex:1 1 180px;border:1px solid #CDD6D1;border-radius:14px;padding:14px;display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+.planos input{margin-top:4px;accent-color:#00BF63}.planos label:has(input:checked){border-color:#00BF63;background:#F2FBF6}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#3F4845}.chk input{margin-top:3px;accent-color:#00BF63}
+.btn-pri{background:#00BF63;color:#0A0A0A;border:0;font:inherit;font-weight:800;font-size:17px;padding:16px;border-radius:999px;cursor:pointer}.btn-pri:disabled{opacity:.6;cursor:wait}
+.erro{color:#B42318;font-weight:600;font-size:14px;min-height:20px}.ok{background:#E3F8EC;border:1px solid #9FE3BF;border-radius:16px;padding:22px;color:#0B5A33}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.leg{font-size:13px;color:#5B6461}
+.doc{max-width:820px;margin:0 auto;padding:64px 24px 0}.doc h2{font-size:20px;margin:28px 0 8px}.doc p,.doc li{color:#3F4845}
+</style>
+
+</head>
+<body>
+<div style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #111514; background: #FFFFFF; line-height: 1.55">
+<header style="border-bottom: 1px solid #EEF1EF">
+<div style="max-width: 1160px; margin: 0 auto; padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<a href="index.html" aria-label="Fluxxu, início"><img src="assets/logo-fundo-claro.png" alt="Fluxxu" style="height: 26px; width: auto; display: block"></a>
+<nav aria-label="Páginas" style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap">
+<a href="index.html" style="color: #5B6461; text-decoration: none; font-size: 15px; font-weight: 600; padding: 10px 14px">Início</a>
+<a href="recursos.html" style="color: #5B6461; text-decoration: none; font-size: 15px; font-weight: 600; padding: 10px 14px">Recursos</a>
+<a href="planos.html" style="color: #5B6461; text-decoration: none; font-size: 15px; font-weight: 600; padding: 10px 14px">Planos</a>
+<a href="pessoal.html" style="color: #5B6461; text-decoration: none; font-size: 15px; font-weight: 600; padding: 10px 14px">Pessoal <span style="background: #E6F2FE; color: #0B5FB0; font-size: 11px; font-weight: 800; padding: 2px 7px; border-radius: 999px">grátis</span></a>
+<a href="https://app.fluxxu.com.br" style="color: #111514; text-decoration: none; font-size: 15px; font-weight: 700; padding: 10px 18px; border: 1px solid #D8DEDB; border-radius: 999px">Entrar</a>
+<a href="cadastro.html" style="background: #111514; color: #FFFFFF; text-decoration: none; font-size: 15px; font-weight: 700; padding: 11px 20px; border-radius: 999px">Teste grátis</a>
+</nav>
+</div>
+</header>
+<main class="cad">
+<section class="cad-l">
+<p style="margin:0;font-size:14px;font-weight:700;color:#0B7A45;letter-spacing:.5px">Teste grátis por 30 dias</p>
+<h1 style="margin:0;font-size:48px;line-height:1.05;letter-spacing:-1.6px;font-weight:800">Comece agora.</h1>
+<p style="margin:0;font-size:18px;color:#5B6461">Preencha os dados da sua empresa e entre no sistema na hora. Sem cartão de crédito.</p>
+<ul style="margin:8px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;color:#3F4845">
+<li>✓ Acesso imediato, com todos os recursos</li><li>✓ R$ 50 por loja ativa por mês depois do teste</li><li>✓ Cancele quando quiser</li><li>✓ Seus dados são só seus</li></ul>
+<p class="leg" style="margin-top:12px">Já tem cadastro? <a href="https://app.fluxxu.com.br">Entrar no sistema</a></p>
+</section>
+<form class="cad-f" id="fCad" novalidate>
+<div class="fld"><label for="razao">Razão social da empresa</label><input id="razao" autocomplete="organization" required maxlength="160"></div>
+<div class="row2"><div class="fld"><label for="cnpj">CNPJ</label><input id="cnpj" inputmode="numeric" placeholder="00.000.000/0000-00" required maxlength="18"></div>
+<div class="fld"><label for="tipo">Tipo de negócio</label><select id="tipo"><option value="mercado">Mercado autônomo</option><option value="lavanderia">Lavanderia de autoatendimento</option><option value="cafe">Máquinas de café automáticas</option><option value="outro">Outro negócio</option></select></div></div>
+<div class="row2"><div class="fld"><label for="nome">Seu nome</label><input id="nome" autocomplete="name" required maxlength="120"></div>
+<div class="fld"><label for="tel">WhatsApp</label><input id="tel" inputmode="tel" autocomplete="tel" placeholder="(11) 99999-9999" required maxlength="20"></div></div>
+<div class="fld"><label for="email">E-mail <span class="leg">(para recuperar a senha)</span></label><input id="email" type="email" autocomplete="email" required maxlength="160"></div>
+<div class="row2"><div class="fld"><label for="senha">Crie uma senha</label><input id="senha" type="password" autocomplete="new-password" required minlength="8" placeholder="8+ caracteres, letras e números"></div>
+<div class="fld"><label for="senha2">Repita a senha</label><input id="senha2" type="password" autocomplete="new-password" required></div></div>
+<div class="fld"><label>Plano depois do teste</label><div class="planos">
+<label><input type="radio" name="plano" value="mensal" checked><span><b>Mensal</b><br><span class="leg">R$ 50 por loja ativa/mês</span></span></label>
+<label><input type="radio" name="plano" value="anual"><span><b>Anual</b><br><span class="leg">R$ 500 por loja/ano · 2 meses de presente</span></span></label></div></div>
+<div class="hp" aria-hidden="true"><label for="site_hp">Não preencha</label><input id="site_hp" tabindex="-1" autocomplete="off"></div>
+<label class="chk"><input type="checkbox" id="aceite"><span>Li e aceito os <a href="termos.html" target="_blank" rel="noopener">termos de uso e a política de privacidade</a>.</span></label>
+<p class="erro" id="erro" role="alert"></p>
+<button class="btn-pri" type="submit" id="btn">Criar minha conta grátis</button>
+<p class="leg" style="margin:0">Você entra com o CNPJ e a senha criada. O login é liberado na hora.</p>
+</form>
+</main>
+<script>
+(function(){
+  var URL_SB="https://tmiciagujxrxjvtrtlkv.supabase.co", ANON="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRtaWNpYWd1anhyeGp2dHJ0bGt2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE5OTg5NjQsImV4cCI6MjEwNzU3NDk2NH0.UT26ycK643i5gDW-KtuTDHRVHnXilnbJXc6_qz5UAmA", APP="https://app.fluxxu.com.br";
+  var t0=Date.now(), $=function(id){return document.getElementById(id);};
+  var qp=new URLSearchParams(location.search); if(qp.get("plano")==="anual") document.querySelector('input[name=plano][value=anual]').checked=true;
+  var dig=function(s){return String(s||"").replace(/\D/g,"");};
+  $("cnpj").addEventListener("input",function(e){var d=dig(e.target.value).slice(0,14); e.target.value=d.replace(/^(\d{2})(\d)/,"$1.$2").replace(/^(\d{2})\.(\d{3})(\d)/,"$1.$2.$3").replace(/\.(\d{3})(\d)/,".$1/$2").replace(/(\d{4})(\d)/,"$1-$2");});
+  $("tel").addEventListener("input",function(e){var d=dig(e.target.value).slice(0,11); e.target.value=d.length>10?d.replace(/(\d{2})(\d{5})(\d{0,4})/,"($1) $2-$3"):d.replace(/(\d{2})(\d{4})(\d{0,4})/,"($1) $2-$3").replace(/-$/,"");});
+  function cnpjOk(c){ c=dig(c); if(c.length!==14||/^(\d)\1+$/.test(c)) return false; var calc=function(n){var s=0,p=n-7; for(var i=0;i<n;i++){ s+=+c[i]*p--; if(p<2) p=9; } var r=s%11; return r<2?0:11-r;}; return calc(12)===+c[12]&&calc(13)===+c[13]; }
+  $("fCad").addEventListener("submit",function(ev){ ev.preventDefault(); var er=$("erro"), b=$("btn"); er.textContent="";
+    var d={acao:"autoCadastro",razao:$("razao").value.trim(),cnpj:$("cnpj").value,tipo:$("tipo").value,nome:$("nome").value.trim(),telefone:$("tel").value,email:$("email").value.trim(),
+      senha:$("senha").value,plano:(document.querySelector('input[name=plano]:checked')||{}).value||"mensal",aceite:$("aceite").checked,site_hp:$("site_hp").value,t:t0};
+    if(d.razao.length<3) return er.textContent="Informe a razão social.";
+    if(!cnpjOk(d.cnpj)) return er.textContent="Confira o CNPJ.";
+    if(d.nome.length<3) return er.textContent="Informe o seu nome.";
+    if(dig(d.telefone).length<10) return er.textContent="Informe o WhatsApp com DDD.";
+    if(!/^\S+@\S+\.\S+$/.test(d.email)) return er.textContent="Informe um e-mail válido.";
+    if(!(d.senha.length>=8&&/[A-Za-z]/.test(d.senha)&&/\d/.test(d.senha))) return er.textContent="A senha precisa ter 8 caracteres ou mais, com letras e números.";
+    if(d.senha!==$("senha2").value) return er.textContent="As senhas não conferem.";
+    if(!d.aceite) return er.textContent="É preciso aceitar os termos de uso.";
+    b.disabled=true; b.textContent="Criando sua conta…";
+    fetch(URL_SB+"/functions/v1/admin",{method:"POST",headers:{"Content-Type":"application/json","apikey":ANON,"Authorization":"Bearer "+ANON},body:JSON.stringify(d)})
+      .then(function(r){return r.json();}).then(function(r){
+        if(!r||!r.ok){ b.disabled=false; b.textContent="Criar minha conta grátis"; er.textContent=(r&&r.erro)||"Não foi possível concluir. Tente de novo."; return; }
+        $("fCad").innerHTML='<div class="ok"><h2 style="margin:0 0 8px">Conta criada! 🎉</h2><p style="margin:0">Seu teste grátis de 30 dias já começou. Abrindo o sistema…</p></div>';
+        setTimeout(function(){ location.href=APP+"/?novo=1&login="+encodeURIComponent(r.login||dig(d.cnpj)); },1800);
+      }).catch(function(){ b.disabled=false; b.textContent="Criar minha conta grátis"; er.textContent="Sem conexão com o servidor. Tente de novo."; });
+  });
+})();
+</script>
+
+<footer style="max-width: 1160px; margin: 0 auto; padding: 64px 24px 40px; display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between; color: #5B6461; font-size: 14px">
+<img src="assets/logo-fundo-claro.png" alt="Fluxxu" style="height: 20px; width: auto; display: block">
+<nav aria-label="Rodapé" style="display: flex; gap: 22px; flex-wrap: wrap">
+<a href="recursos.html" style="color: #3F4845; text-decoration: none">Recursos</a>
+<a href="planos.html" style="color: #3F4845; text-decoration: none">Planos</a>
+<a href="https://app.fluxxu.com.br" style="color: #3F4845; text-decoration: none">Entrar</a>
+<a href="mailto:[SEU-EMAIL]" style="color: #3F4845; text-decoration: none">[SEU E-MAIL]</a>
+</nav>
+<p style="margin: 0; flex-basis: 100%; font-size: 12px">© 2026 Fluxxu · Controle Financeiro. Todos os direitos reservados.</p>
+</footer>
+</div>
+</body>
+</html>
